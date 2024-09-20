@@ -1,0 +1,93 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aedcc0;
+    /* entire website background */
+}
+
+header
+{
+    background-color: #343e3d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /*very top, must be the same on all pages*/
+    /*if not the same, shucks*/
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: #607466;
+    /*same as the header*/
+}
+
+nav a
+{
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    /*navigation buttons*/
+}
+
+nav a:hover
+{
+    background-color: #555;
+    /*how button looks when hovering over it*/
+}
+
+main
+{
+    padding: 20px;
+    /*without this the divs fill the entire page*/
+}
+
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 10000;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a
+{
+    color: gray;
+}
+
+.picture
+{
+    background-color: #607466;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+.picture img
+{
+    width: 99%;
+    height: 75%;
+}
+
+.blogcard
+{
+    background-color: #343e3d;
+    padding: 20px;
+    margin-top: 20px;
+    color: rgb(228, 228, 228);
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}

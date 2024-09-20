@@ -1,0 +1,100 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aedcc0;
+    /* entire website background */
+}
+
+header
+{
+    background-color: #343e3d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /*very top, must be the same on all pages*/
+    /*if not the same, shucks*/
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: #607466;
+    /*same as the header*/
+}
+
+nav a
+{
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    /*navigation buttons*/
+}
+
+nav a:hover
+{
+    background-color: #555;
+    /*how button looks when hovering over it*/
+}
+
+main
+{
+    padding: 20px;
+    /*without this the divs fill the entire page*/
+}
+
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 10000;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a
+{
+    color: gray;
+}
+
+#parent 
+{
+    display: flex;
+    max-width: 2000px;
+}
+
+#narrow
+{
+    width: 325px;
+    height: auto;
+    border: 1px solid black;
+    /*shows image to the side of text*/
+}
+
+#narrow img
+{
+    max-width: 100%;
+    height: 100%;
+}
+
+#wide
+{
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: x-large;
+    /*text to the side of image*//
+}
+
+#center
+{
+    text-align: center;
+}
