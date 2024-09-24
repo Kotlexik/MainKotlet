@@ -1,0 +1,278 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aedcc0;
+    /* entire website background */
+}
+
+header
+{
+    background-color: #343e3d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /*very top, must be the same on all pages*/
+    /*if not the same, shucks*/
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: #607466;
+    /*same as the header*/
+}
+
+nav a
+{
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    /*navigation buttons*/
+}
+
+nav a:hover
+{
+    background-color: #555;
+    /*how button looks when hovering over it*/
+}
+
+main
+{
+    padding: 20px;
+    /*without this the divs fill the entire page*/
+    padding-bottom: 60px;
+}
+
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a
+{
+    color: gray;
+}
+
+#parent 
+{
+    display: flex;
+    max-width: 2000px;
+}
+
+#narrow
+{
+    width: 325px;
+    height: auto;
+    border: 1px solid black;
+    /*shows image to the side of text*/
+}
+
+#narrow img
+{
+    max-width: 100%;
+    height: 100%;
+}
+
+#wide
+{
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: x-large;
+    /*text to the side of image*//
+}
+
+#center
+{
+    text-align: center;
+}
+
+/*Gallery*/
+.slideshow  /*move the image container*/
+{
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #343e3d;
+}
+
+.mySlides   /*bye bye pictures*/
+{
+    display: none;
+    text-align: center;
+}
+
+.mySlides img
+{
+
+    height: 600px;
+    width: auto;
+    
+}
+
+.cursor
+{
+    cursor: pointer;
+}
+
+.prev, .next    /*button design*/
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next   /*positioning for next button*/
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: black;
+}
+
+.numbertext
+{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container
+{
+    text-align: center;
+    background-color: #607466;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column
+{
+    float: left;
+    width: 16.66%;
+}
+.column img
+{
+    height: 100px;
+}
+
+.demo   /*transparency for thumbnails*/
+{
+    opacity: 0.6;
+}
+
+.active, .demo:hover
+{
+    opacity: 1;
+}
+
+/*Contact*/
+input[type=text], textarea, select
+{
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]
+{
+    background-color: #607466;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea
+{
+    height: 200px;
+}
+
+/*about*/
+#container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#col
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#col img
+{
+    width: auto;
+    height: 300px;
+}
+
+#col h2
+{
+    text-align: center;
+}
+
+/*Blog*/
+.picture
+{
+    background-color: #607466;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+.picture img
+{
+    width: 99%;
+    height: 75%;
+}
+
+.blogcard
+{
+    background-color: #343e3d;
+    padding: 20px;
+    margin-top: 20px;
+    color: rgb(228, 228, 228);
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
